@@ -1,0 +1,328 @@
+:root {
+    --primary-color: rgb(41, 95, 152);
+    --secondary-color: rgb(25, 70, 117);
+    --accent-color: #4cc9f0;
+    --dark-color: #1a237e;
+    --light-color: #f8f9fa;
+    --text-color: #2b2d42;
+    --text-light: #6c757d;
+    --success-color: #4caf50;
+    --warning-color: #ff9800;
+    --danger-color: #f44336;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f8fafc;
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0 0.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.header .logo {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.last-updated {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.header-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: -50px auto 2rem;
+    padding: 0 1.5rem;
+    position: relative;
+    z-index: 10;
+}
+
+/* Privacy Intro */
+.privacy-intro {
+    text-align: center;
+    margin: 2rem auto 3rem;
+    max-width: 800px;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--secondary-color);
+}
+
+.privacy-intro p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Privacy Grid */
+.privacy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.privacy-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.privacy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(67, 97, 238, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.privacy-card h3 {
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.privacy-card p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.privacy-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.privacy-card ul li {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+    display: flex;
+    align-items: flex-start;
+}
+
+.privacy-card ul li i {
+    color: var(--primary-color);
+    margin-right: 0.75rem;
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+}
+
+/* Contact Section */
+.contact-section {
+    background: white;
+    border-radius: 12px;
+    padding: 3rem;
+    margin: 4rem 0;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.contact-section h2 {
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.contact-section p {
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-btn i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.whatsapp {
+    background-color: #25d366;
+}
+
+.whatsapp:hover {
+    background-color: #128c7e;
+    transform: translateY(-2px);
+}
+
+.facebook {
+    background-color: #4267B2;
+}
+
+.facebook:hover {
+    background-color: #365899;
+    transform: translateY(-2px);
+}
+
+.email {
+    background-color: #ea4335;
+}
+
+.email:hover {
+    background-color: #d33426;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background: var(--secondary-color);
+    color: white;
+    padding: 3rem 1rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-links {
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 0.75rem;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+footer p {
+    margin: 0.5rem 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.version {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6) !important;
+    margin-top: 1rem !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .privacy-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-methods {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-btn {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+    
+    .contact-section {
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.privacy-card, .contact-section {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Delay animations for grid items */
+.privacy-card:nth-child(1) { animation-delay: 0.1s; }
+.privacy-card:nth-child(2) { animation-delay: 0.2s; }
+.privacy-card:nth-child(3) { animation-delay: 0.3s; }
+.privacy-card:nth-child(4) { animation-delay: 0.4s; }
+.privacy-card:nth-child(5) { animation-delay: 0.5s; }
+.privacy-card:nth-child(6) { animation-delay: 0.6s; }
